@@ -7,5 +7,5 @@ def assert_common(self, response, http_code, status,
     self.assertEqual(http_code, response.status_code)
     # 断言status
     self.assertEqual(status, response.json().get("status"))
-    # 断言msg
+    # 断言
     self.assertEqual(msg, response.json().get("msg"))
